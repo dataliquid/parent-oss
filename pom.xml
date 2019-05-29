@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dataliquid</groupId>
 	<artifactId>parent-oss</artifactId>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 	<packaging>pom</packaging>
 	<name>dataliquid :: Open Source Software - Maven Parent</name>
 
@@ -20,10 +20,18 @@
 			<name>Apache License, Version 2.0</name>
 		</license>
 	</licenses>
-	
+
 	<scm>
 		<url>https://github.com/dataliquid/parent-oss/tree/master</url>
 	</scm>
+
+	<developers>
+		<developer>
+			<name>GitHub Developer Team</name>
+			<organization>dataliquid GmbH</organization>
+			<organizationUrl>www.dataliquid.com</organizationUrl>
+		</developer>
+	</developers>
 
 	<build>
 		<pluginManagement>
