@@ -2,9 +2,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dataliquid</groupId>
 	<artifactId>parent-oss</artifactId>
-	<version>1.0.9</version>
+	<version>1.1.0</version>
 	<packaging>pom</packaging>
 	<name>dataliquid :: Open Source Software - Maven Parent</name>
+	<description>Maven Parent - Open Source Software</description>
 
 	<url>https://www.github.com/dataliquid</url>
 
