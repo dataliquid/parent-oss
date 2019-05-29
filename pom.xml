@@ -5,6 +5,7 @@
 	<version>1.0.8-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>dataliquid :: Open Source Software - Maven Parent</name>
+	<description>Maven Parent - Open Source Software</description>
 
 	<url>https://www.github.com/dataliquid</url>
 
