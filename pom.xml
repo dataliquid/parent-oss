@@ -120,9 +120,32 @@
 					<version>1.9</version>
 				</plugin>
 				<plugin>
-					<groupId>external.atlassian.jgitflow</groupId>
-					<artifactId>jgitflow-maven-plugin</artifactId>
-					<version>1.0-m5.1</version>
+					<groupId>com.amashchenko.maven.plugin</groupId>
+					<artifactId>gitflow-maven-plugin</artifactId>
+					<version>1.21.0</version>
+					<configuration>
+						<versionDigitToIncrement>1</versionDigitToIncrement>
+						<hotfixVersionDigitToIncrement>2</hotfixVersionDigitToIncrement>
+						<installProject>false</installProject>
+						<verbose>true</verbose>
+						<pushRemote>true</pushRemote>
+						<useSnapshotInRelease>true</useSnapshotInRelease>
+						<useSnapshotInHotfix>true</useSnapshotInHotfix>
+						<gitFlowConfig>
+								<productionBranch>master</productionBranch>
+								<developmentBranch>develop</developmentBranch>
+								<featureBranchPrefix>feature/</featureBranchPrefix>
+								<releaseBranchPrefix>release/</releaseBranchPrefix>
+								<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
+								<supportBranchPrefix>support/</supportBranchPrefix>
+								<versionTagPrefix></versionTagPrefix>
+								<origin>origin</origin>
+						</gitFlowConfig>
+						<commitMessages>
+								<hotfixFinishMessage>Update version to @{version}</hotfixFinishMessage>
+								<releaseFinishMessage>Update version to @{version}</releaseFinishMessage>
+						</commitMessages>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>com.mycila</groupId>
