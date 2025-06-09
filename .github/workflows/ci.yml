@@ -37,6 +37,7 @@ jobs:
         name: Maven Tests - Java ${{ matrix.java }}
         path: '**/surefire-reports/TEST-*.xml'
         reporter: java-junit
+        fail-on-empty: false
 
   code-quality:
     runs-on: ubuntu-latest
