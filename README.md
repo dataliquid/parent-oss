@@ -1,5 +1,8 @@
 # Parent OSS
 
+[![CI](https://github.com/dataliquid/parent-oss/actions/workflows/ci.yml/badge.svg)](https://github.com/dataliquid/parent-oss/actions/workflows/ci.yml)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.dataliquid/parent-oss/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.dataliquid/parent-oss)
+
 Parent POM for open source projects.
 
 ## Overview
@@ -14,7 +17,7 @@ To use this parent POM in your project, add the following to your `pom.xml`:
 <parent>
     <groupId>com.dataliquid</groupId>
     <artifactId>parent-oss</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
 </parent>
 ```
 
