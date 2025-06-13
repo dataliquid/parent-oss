@@ -17,7 +17,7 @@ To use this parent POM in your project, add the following to your `pom.xml`:
 <parent>
     <groupId>com.dataliquid</groupId>
     <artifactId>parent-oss</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
 </parent>
 ```
 
