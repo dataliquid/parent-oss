@@ -17,7 +17,7 @@ To use this parent POM in your project, add the following to your `pom.xml`:
 <parent>
     <groupId>com.dataliquid</groupId>
     <artifactId>parent-oss</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0</version>
 </parent>
 ```
 
@@ -28,6 +28,67 @@ To use this parent POM in your project, add the following to your `pom.xml`:
 - Build optimization settings
 - Release management configuration
 - Quality assurance tools integration
+- Automatic code formatting with CI-aware profiles
+
+## Code Formatting
+
+This parent POM provides automatic code formatting using the `formatter-maven-plugin` with CI-aware profile activation.
+
+### Automatic Profile Activation
+
+The formatter profiles activate automatically based on the CI environment:
+
+- **Local Development** (CI environment variable not set):
+  - Profile `format-code` activates automatically
+  - Runs `formatter:format` during the validate phase
+  - Automatically formats code according to the configured style guide
+
+- **CI/CD Pipeline** (CI=true):
+  - Profile `format-code-validation` activates automatically
+  - Runs `formatter:validate` during the validate phase
+  - Fails the build if code is not properly formatted
+
+### Default Configuration
+
+The parent POM includes:
+- **Dependency**: `com.dataliquid.guidelines:coding-conventions` containing formatter styles
+- **Default Styles**: 
+  - Java: `codestyles/default/java-formatter.xml`
+  - JavaScript: `codestyles/default/javascript-formatter.xml`
+  - JSON: `codestyles/default/json-formatter.properties`
+  - HTML: `codestyles/default/html-formatter.properties`
+  - CSS: `codestyles/default/css-formatter.properties`
+- **Line Ending**: LF (Unix-style)
+- **Encoding**: UTF-8
+
+### Overriding Formatter Configuration
+
+Child projects can override the formatter configuration while still using the styles from the parent's dependency:
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>net.revelc.code.formatter</groupId>
+            <artifactId>formatter-maven-plugin</artifactId>
+            <configuration>
+                <!-- Use alternative style from the classpath dependency -->
+                <configFile>codestyles/tradional/eclipse-codestyle.xml</configFile>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
+
+All styles are loaded from the classpath, so no local files are needed in your project.
+
+### Disabling Formatter
+
+To skip formatting completely, deactivate both profiles:
+
+```bash
+mvn clean validate -P!format-code,!format-code-validation
+```
 
 ## Projects Using This Parent
 
