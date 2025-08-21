@@ -52,7 +52,12 @@ The formatter profiles activate automatically based on the CI environment:
 
 The parent POM includes:
 - **Dependency**: `com.dataliquid.guidelines:coding-conventions` containing formatter styles
-- **Default Style**: `codestyles/default/java-formatter.xml` from the classpath
+- **Default Styles**: 
+  - Java: `codestyles/default/java-formatter.xml`
+  - JavaScript: `codestyles/default/javascript-formatter.xml`
+  - JSON: `codestyles/default/json-formatter.properties`
+  - HTML: `codestyles/default/html-formatter.properties`
+  - CSS: `codestyles/default/css-formatter.properties`
 - **Line Ending**: LF (Unix-style)
 - **Encoding**: UTF-8
 
