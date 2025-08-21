@@ -235,24 +235,17 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<!-- Java formatter configuration -->
-					<configFile>codestyles/default/java-formatter.xml</configFile>
 					<encoding>UTF-8</encoding>
 					<lineEnding>LF</lineEnding>
+					
+					<configFile>codestyles/default/java-formatter.xml</configFile>
 					<compilerSource>${maven.compiler.source}</compilerSource>
 					<compilerCompliance>${maven.compiler.source}</compilerCompliance>
 					<compilerTargetPlatform>${maven.compiler.target}</compilerTargetPlatform>
 					
-					<!-- JavaScript formatter configuration -->
 					<jsFormatterFile>codestyles/default/javascript-formatter.xml</jsFormatterFile>
-					
-					<!-- JSON formatter configuration -->
 					<jsonFormatterFile>codestyles/default/json-formatter.properties</jsonFormatterFile>
-					
-					<!-- HTML formatter configuration -->
 					<htmlFormatterFile>codestyles/default/html-formatter.properties</htmlFormatterFile>
-					
-					<!-- CSS formatter configuration -->
 					<cssFormatterFile>codestyles/default/css-formatter.properties</cssFormatterFile>
 				</configuration>
 			</plugin>
