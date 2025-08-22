@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.dataliquid</groupId>
 	<artifactId>parent-oss</artifactId>
-	<version>2.2.2</version>
+	<version>2.2.3</version>
 	<packaging>pom</packaging>
 	<name>dataliquid :: Open Source Software - Maven Parent</name>
 	<description>Maven Parent - Open Source Software</description>
@@ -242,10 +242,10 @@
 					<compilerTargetPlatform>${maven.compiler.target}</compilerTargetPlatform>
 					
 					<configFile>codestyles/default/java-formatter.xml</configFile>
-					<jsFormatterFile>codestyles/default/javascript-formatter.xml</jsFormatterFile>
-					<jsonFormatterFile>codestyles/default/json-formatter.properties</jsonFormatterFile>
-					<htmlFormatterFile>codestyles/default/html-formatter.properties</htmlFormatterFile>
-					<cssFormatterFile>codestyles/default/css-formatter.properties</cssFormatterFile>
+					<configJsFile>codestyles/default/javascript-formatter.xml</configJsFile>
+					<configJsonFile>codestyles/default/json-formatter.properties</configJsonFile>
+					<configHtmlFile>codestyles/default/html-formatter.properties</configHtmlFile>
+					<configCssFile>codestyles/default/css-formatter.properties</configCssFile>
 				</configuration>
 			</plugin>
 		</plugins>
