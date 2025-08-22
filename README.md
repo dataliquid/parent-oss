@@ -73,7 +73,7 @@ Child projects can override the formatter configuration while still using the st
             <artifactId>formatter-maven-plugin</artifactId>
             <configuration>
                 <!-- Use alternative style from the classpath dependency -->
-                <configFile>codestyles/tradional/eclipse-codestyle.xml</configFile>
+                <configFile>codestyles/traditional/eclipse-codestyle.xml</configFile>
             </configuration>
         </plugin>
     </plugins>
