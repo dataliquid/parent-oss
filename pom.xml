@@ -242,10 +242,10 @@
 					<compilerTargetPlatform>${maven.compiler.target}</compilerTargetPlatform>
 					
 					<configFile>codestyles/default/java-formatter.xml</configFile>
-					<jsFormatterFile>codestyles/default/javascript-formatter.xml</jsFormatterFile>
-					<jsonFormatterFile>codestyles/default/json-formatter.properties</jsonFormatterFile>
-					<htmlFormatterFile>codestyles/default/html-formatter.properties</htmlFormatterFile>
-					<cssFormatterFile>codestyles/default/css-formatter.properties</cssFormatterFile>
+					<configJsFile>codestyles/default/javascript-formatter.xml</configJsFile>
+					<configJsonFile>codestyles/default/json-formatter.properties</configJsonFile>
+					<configHtmlFile>codestyles/default/html-formatter.properties</configHtmlFile>
+					<configCssFile>codestyles/default/css-formatter.properties</configCssFile>
 				</configuration>
 			</plugin>
 		</plugins>
