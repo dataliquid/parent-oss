@@ -312,7 +312,9 @@
 		<profile>
 			<id>qa</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<property>
+					<name>!skipQA</name>
+				</property>
 			</activation>
 			<build>
 				<plugins>
