@@ -1,7 +1,7 @@
 # Parent OSS
 
 [![CI](https://github.com/dataliquid/parent-oss/actions/workflows/ci.yml/badge.svg)](https://github.com/dataliquid/parent-oss/actions/workflows/ci.yml)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.dataliquid/parent-oss/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.dataliquid/parent-oss)
+[![Maven Central](https://img.shields.io/maven-central/v/com.dataliquid/parent-oss.svg)](https://search.maven.org/artifact/com.dataliquid/parent-oss)
 
 Parent POM for open source projects.
 
